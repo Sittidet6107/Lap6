@@ -1,0 +1,50 @@
+body {
+    font-family: courier;
+    line-height: 2;
+    background-color: blueviolet;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(90, 16, 160);
+    color: rgb(30, 8, 51);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ตั้งให้มี 3 คอลัมน์ */
+    gap: 10px; /* ช่องว่างระหว่างกล่อง */
+}
+
+.hobby {
+    position: relative; /* ตั้งค่าให้เป็น relative position เพื่อให้สามารถใช้ absolute position บนภายในได้ */
+    background-color: rgb(188, 161, 216);
+    border: 5px solid rgb(40, 23, 56);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);;
+}
+
+.hobby img{
+    height: 200px;
+    width: 250px;
+}
+
+.hobby .number {
+    position: absolute; /* ตั้งค่าให้เป็น absolute position เพื่อจัดตำแหน่ง */
+    top: 13px;
+    right: 15px;
+    background-color: #333;
+    color: white;
+    padding: 3.5px 15px;
+    border-radius: 50%; /* ทำให้มีรูปร่างเป็นวงกลม */
+}
